@@ -1,0 +1,170 @@
+// products.mongodb
+
+use("pet_store")
+
+db.products.drop() // elimina los documentos creados en la colleccion anteriormente
+
+db.products.insertMany(
+    [
+        {
+            "_id": 1,
+            "title": "Cama para Mascotas",
+            "price": 50,
+            "description": "Cama acogedora para tu amigo peludo",
+            "category": "Ropa de Cama",
+            "image": "cama_mascotas.jpg"
+        },
+        {
+            "_id": 2,
+            "title": "Collar para Perro",
+            "price": 15,
+            "description": "Collar elegante y duradero para perros",
+            "category": "Accesorios",
+            "image": "collar_perro.jpg"
+        },
+        {
+            "_id": 3,
+            "title": "Árbol para Gatos",
+            "price": 80,
+            "description": "Árbol interactivo para que los gatos trepen y jueguen",
+            "category": "Muebles",
+            "image": "arbol_gatos.jpg"
+        },
+        {
+            "_id": 4,
+            "title": "Comedero para Mascotas",
+            "price": 10,
+            "description": "Plato para las deliciosas comidas de tu mascota",
+            "category": "Alimentación",
+            "image": "comedero_mascotas.jpg"
+        },
+        {
+            "_id": 5,
+            "title": "Acuario",
+            "price": 120,
+            "description": "Acuario espacioso para tus mascotas acuáticas",
+            "category": "Acuarios",
+            "image": "acuario.jpg"
+        },
+        {
+            "_id": 6,
+            "title": "Rueda para Hámster",
+            "price": 8,
+            "description": "Rueda de ejercicio para hámsters felices",
+            "category": "Juguetes",
+            "image": "rueda_hamster.jpg"
+        },
+        {
+            "_id": 7,
+            "title": "Jaula para Pájaros",
+            "price": 60,
+            "description": "Jaula segura y cómoda para pájaros",
+            "category": "Viviendas",
+            "image": "jaula_pajaros.jpg"
+        },
+        {
+            "_id": 8,
+            "title": "Champú para Mascotas",
+            "price": 12,
+            "description": "Champú suave para el baño de tu mascota",
+            "category": "Aseo",
+            "image": "champu_mascotas.jpg"
+        },
+        {
+            "_id": 9,
+            "title": "Set de Juguetes para Perro",
+            "price": 25,
+            "description": "Surco de juguetes para la diversión de tu perro",
+            "category": "Juguetes",
+            "image": "set_juguetes_perro.jpg"
+        },
+        {
+            "_id": 10,
+            "title": "Arenero para Gatos",
+            "price": 40,
+            "description": "Arenero sin olores para la comodidad de tu gato",
+            "category": "Arena",
+            "image": "arenero_gatos.jpg"
+        },
+        {
+            "_id": 11,
+            "title": "Transportadora para Mascotas",
+            "price": 35,
+            "description": "Transportadora portátil para viajar con seguridad con tu mascota",
+            "category": "Viaje",
+            "image": "transportadora_mascotas.jpg"
+        },
+        {
+            "_id": 12,
+            "title": "Alfombra Térmica para Reptiles",
+            "price": 18,
+            "description": "Alfombra térmica para regular la temperatura en hábitats de reptiles",
+            "category": "Calefacción",
+            "image": "alfombra_reptiles.jpg"
+        },
+        {
+            "_id": 13,
+            "title": "Arnés para Animales Pequeños",
+            "price": 15,
+            "description": "Arnés para que los animales pequeños exploren al aire libre",
+            "category": "Accesorios",
+            "image": "arnes_animales_pequenos.jpg"
+        },
+        {
+            "_id": 14,
+            "title": "Snacks Dentales para Mascotas",
+            "price": 14,
+            "description": "Snacks para promover la salud dental en las mascotas",
+            "category": "Snacks",
+            "image": "snacks_dentales_mascotas.jpg"
+        },
+        {
+            "_id": 15,
+            "title": "Jaula para Cobayas",
+            "price": 70,
+            "description": "Jaula espaciosa para cobayas felices",
+            "category": "Viviendas",
+            "image": "jaula_cobayas.jpg"
+        },
+        {
+            "_id": 16,
+            "title": "Poste Rascador para Gatos",
+            "price": 30,
+            "description": "Poste duradero para las necesidades de rascado de tu gato",
+            "category": "Muebles",
+            "image": "poste_rascador_gatos.jpg"
+        },
+        {
+            "_id": 17,
+            "title": "Kit de Aseo para Perro",
+            "price": 55,
+            "description": "Kit completo para el aseo de tu perro en casa",
+            "category": "Aseo",
+            "image": "kit_aseo_perro.jpg"
+        },
+        {
+            "_id": 18,
+            "title": "Decoración para Tanque de Tortugas",
+            "price": 22,
+            "description": "Artículos decorativos para el tanque de tu tortuga",
+            "category": "Acuarios",
+            "image": "decoracion_tanque_tortugas.jpg"
+        },
+        {
+            "_id": 19,
+            "title": "Dispensador de Heno para Conejos",
+            "price": 12,
+            "description": "Dispensador conveniente para el heno de tu conejo",
+            "category": "Alimentación",
+            "image": "dispensador_heno_conejos.jpg"
+        },
+        {
+            "_id": 20,
+            "title": "Placa de Identificación para Mascotas",
+            "price": 8,
+            "description": "Placa de identificación personalizable para la seguridad de tu mascota",
+            "category": "Accesorios",
+            "image": "placa_identificacion_mascotas.jpg"
+        }
+    ]
+)
